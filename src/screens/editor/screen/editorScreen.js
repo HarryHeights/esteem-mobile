@@ -11,6 +11,7 @@ import {
   TitleArea, TagArea, TextArea, SummaryArea,
 } from '../../../components/editorElements';
 import { PostForm } from '../../../components/postForm';
+import { Camera } from '../../../components/camera';
 
 // Styles
 import globalStyles from '../../../globalStyles';
@@ -194,6 +195,7 @@ class EditorScreen extends Component {
           quickTitle={wordsCount > 0 && `${wordsCount} words`}
           rightButtonText={rightButtonText}
         />
+        <Camera></Camera>
         <PostForm
           handleFormUpdate={this._handleFormUpdate}
           handleOnSubmit={this._handleOnSubmit}

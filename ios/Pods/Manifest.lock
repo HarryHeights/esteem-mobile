@@ -27,6 +27,14 @@ PODS:
   - QBImagePickerController (3.4.0)
   - React (0.57.8):
     - React/Core (= 0.57.8)
+  - react-native-camera (1.10.2):
+    - React
+    - react-native-camera/RCT (= 1.10.2)
+    - react-native-camera/RN (= 1.10.2)
+  - react-native-camera/RCT (1.10.2):
+    - React
+  - react-native-camera/RN (1.10.2):
+    - React
   - react-native-fast-image (4.0.14):
     - FLAnimatedImage
     - React
@@ -95,6 +103,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
   - react-native-fast-image (from `../node_modules/react-native-fast-image`)
   - react-native-version-number (from `../node_modules/react-native-version-number`)
   - React/Core (from `../node_modules/react-native`)
@@ -134,6 +143,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-camera:
+    :path: "../node_modules/react-native-camera"
   react-native-fast-image:
     :path: "../node_modules/react-native-fast-image"
   react-native-version-number:
@@ -148,22 +159,23 @@ SPEC CHECKSUMS:
   AppCenterReactNativeShared: 542de3c68bcec89fba964213048287592a443976
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  CodePush: 338a023972c64636503e8886cf4cb6ec27dd1c01
+  CodePush: f6b348759cdc42c734d9c3a46ceb2997c270b12e
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   JWT: 05028b9624591bba9681bb57df2c5f95fa258bad
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
-  React: adbac0757ce35e92fbd447ab98c810209d27d9b0
-  react-native-fast-image: 6d50167ad4d68b59640ceead8c2bc4e58d91d8bd
-  react-native-version-number: 75301519bb72064ad209a498ed08b128cbcf10e7
-  RNImageCropPicker: 754299983d07c450aec0834c0efe0ed114131ff3
+  React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-camera: a8d04ef12749def72cae86b0b8d28c2de891a392
+  react-native-fast-image: cba3d9bf9c2cf8ddb643d887a686c53a5dd90a2c
+  react-native-version-number: 36c0d8eb57a275a6239a860f8dbab3d18299b0e0
+  RNImageCropPicker: 32ca4b9fef4e1b7b85ba69494242122948117e06
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
-  yoga: 74cdf036c30820443b25ade59916236b1e95ee93
+  yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 7e5e745ff42e44b918e4f17ac209c3b553d6be97
+PODFILE CHECKSUM: a546c73d04a6d21388d35b77bda6872c760842b8
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.5.3

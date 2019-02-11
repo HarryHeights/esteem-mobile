@@ -147,6 +147,7 @@ configurations.all {
 }
 
 dependencies {
+    compile project(':react-native-camera')
     compile project(':react-native-version-number')
     compile project(':react-native-code-push')
     compile project(':realm')
