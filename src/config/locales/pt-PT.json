@@ -113,7 +113,9 @@
     "default_placeholder": "Sobre o que queres escrever hoje?",
     "reply_placeholder": "O que desejava escrever sobre este post em em cima?",
     "publish": "Publicar",
-    "reply": "Responder"
+    "reply": "Responder",
+    "open_galery": "Galeria Aberta",
+    "capture_photo": "Capturar uma foto"
   },
   "pincode": {
     "enter_text": "Insira PIN para desbloquear",
@@ -134,6 +136,8 @@
     "warning": "Aviso",
     "invalid_pincode": "Código PIN inválido, por favor verifique e tente novamente.",
     "remove_alert": "Tem a certeza de que pretende remover?",
+    "clear_alert": "Tem certeza que deseja limpar?",
+    "clear": "Limpar",
     "cancel": "Cancelar",
     "delete": "Apagar",
     "copied": "Copiado!",

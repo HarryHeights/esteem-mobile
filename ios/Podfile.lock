@@ -1,13 +1,13 @@
 PODS:
-  - AppCenter/Analytics (1.11.0):
+  - AppCenter/Analytics (1.13.0):
     - AppCenter/Core
-  - AppCenter/Core (1.11.0)
-  - AppCenter/Crashes (1.11.0):
+  - AppCenter/Core (1.13.0)
+  - AppCenter/Crashes (1.13.0):
     - AppCenter/Core
-  - AppCenter/Push (1.11.0):
+  - AppCenter/Push (1.13.0):
     - AppCenter/Core
-  - AppCenterReactNativeShared (1.10.0):
-    - AppCenter/Core (= 1.11.0)
+  - AppCenterReactNativeShared (1.12.0):
+    - AppCenter/Core (= 1.13.0)
   - Base64 (1.1.2)
   - boost-for-react-native (1.63.0)
   - CodePush (5.5.1):
@@ -79,18 +79,18 @@ PODS:
     - React/Core
     - RSKImageCropper
   - RSKImageCropper (2.2.1)
-  - SDWebImage/Core (4.4.4)
-  - SDWebImage/GIF (4.4.4):
+  - SDWebImage/Core (4.4.5)
+  - SDWebImage/GIF (4.4.5):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
   - SSZipArchive (2.1.4)
   - yoga (0.57.8.React)
 
 DEPENDENCIES:
-  - AppCenter/Analytics (~> 1.11.0)
-  - AppCenter/Crashes (~> 1.11.0)
-  - AppCenter/Push (~> 1.11.0)
-  - AppCenterReactNativeShared (~> 1.10.0)
+  - AppCenter/Analytics (~> 1.13.0)
+  - AppCenter/Crashes (~> 1.13.0)
+  - AppCenter/Push (~> 1.13.0)
+  - AppCenterReactNativeShared (~> 1.12.0)
   - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -144,8 +144,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AppCenter: 3bccf8d733e337d0db574dd4cb0e33ab9637b7f2
-  AppCenterReactNativeShared: a77b000c2ac6dc2e44472621d7d0770f196e5822
+  AppCenter: a70408f15de23f925001bfc7b7473094a009a4eb
+  AppCenterReactNativeShared: 542de3c68bcec89fba964213048287592a443976
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CodePush: f6b348759cdc42c734d9c3a46ceb2997c270b12e
@@ -160,10 +160,10 @@ SPEC CHECKSUMS:
   react-native-version-number: 36c0d8eb57a275a6239a860f8dbab3d18299b0e0
   RNImageCropPicker: 32ca4b9fef4e1b7b85ba69494242122948117e06
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
-  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 19ca750f5874376432380838891f13aaeecb302d
+PODFILE CHECKSUM: 7e5e745ff42e44b918e4f17ac209c3b553d6be97
 
 COCOAPODS: 1.5.3

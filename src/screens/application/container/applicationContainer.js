@@ -16,6 +16,7 @@ import ru from 'react-intl/locale-data/ru';
 import de from 'react-intl/locale-data/de';
 import it from 'react-intl/locale-data/it';
 import hu from 'react-intl/locale-data/hu';
+import tr from 'react-intl/locale-data/tr';
 
 import AUTH_TYPE from '../../../constants/authType';
 
@@ -65,7 +66,7 @@ import {
 import ApplicationScreen from '../screen/applicationScreen';
 import { Launch } from '../..';
 
-addLocaleData([...en, ...ru, ...de, ...id, ...it, ...hu]);
+addLocaleData([...en, ...ru, ...de, ...id, ...it, ...hu, ...tr]);
 
 class ApplicationContainer extends Component {
   constructor() {
@@ -319,7 +320,7 @@ class ApplicationContainer extends Component {
   };
 
   render() {
-    const { selectedLanguage, isConnected } = this.props;
+    const { selectedLanguage, isConnected, toastNotification} = this.props;
     const { isRenderRequire, isReady } = this.state;
 
     // For testing It comented out.
@@ -330,7 +331,7 @@ class ApplicationContainer extends Component {
 
     if (isRenderRequire && isReady) {
       return (
-        <ApplicationScreen isConnected={isConnected} locale={selectedLanguage} {...this.props} />
+        <ApplicationScreen isConnected={isConnected} locale={selectedLanguage} toastNotification={toastNotification} {...this.props} />
       );
     }
     return <Launch />;
@@ -353,6 +354,9 @@ export default connect(
     currentAccount: state.account.currentAccount,
     otherAccounts: state.account.otherAccounts,
     pinCode: state.account.pin,
+
+    // UI
+    toastNotification: state.ui.toastNotification
   }),
   (dispatch, props) => ({
     dispatch,
