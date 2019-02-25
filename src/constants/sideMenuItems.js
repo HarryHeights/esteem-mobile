@@ -19,17 +19,17 @@ const authMenuItems = [
     icon: 'insert-drive-file',
     id: 'drafts',
   },
-  // {
-  //   name: 'Gallery',
-  //   route: 'galery',
-  //   icon: 'photo-library',
-  //   id: 'gallery',
-  // },
   {
     name: 'Settings',
     route: ROUTES.SCREENS.SETTINGS,
     icon: 'settings',
     id: 'settings',
+  },
+  {
+    name: 'Feedback',
+    route: ROUTES.SCREENS.FEEDBACK,
+    icon: 'feedback',
+    id: 'feedback',
   },
   {
     name: 'Logout',
@@ -51,6 +51,12 @@ const noAuthMenuItems = [
     route: ROUTES.SCREENS.SETTINGS,
     icon: 'settings',
     id: 'settings',
+  },
+  {
+    name: 'Feedback',
+    route: ROUTES.SCREENS.FEEDBACK,
+    icon: 'feedback',
+    id: 'feedback',
   },
 ];
 

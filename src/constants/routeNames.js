@@ -17,6 +17,7 @@ export default {
     STEEM_CONNECT: `SteemConnect${SCREEN_SUFFIX}`,
     VOTERS: `Voters${SCREEN_SUFFIX}`,
     BOOKMARKS: `Bookmarks${SCREEN_SUFFIX}`,
+    FEEDBACK: `Feedback${SCREEN_SUFFIX}`,
   },
   DRAWER: {
     MAIN: `Main${DRAWER_SUFFIX}`,

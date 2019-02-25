@@ -96,7 +96,8 @@
     "add_account": "Add Account",
     "logout": "Logout",
     "cancel": "Cancel",
-    "logout_text": "Are you sure you want to logout?"
+    "logout_text": "Are you sure you want to logout?",
+    "feedback": "Feedback"
   },
   "header": {
     "title": "Login to customize your feed",

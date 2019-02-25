@@ -11,6 +11,7 @@ import {
   Bookmarks,
   Drafts,
   Editor,
+  Feedback,
   Follows,
   Login,
   PinCode,
@@ -88,6 +89,12 @@ const stackNavigatior = createStackNavigator(
     },
     [ROUTES.SCREENS.BOOKMARKS]: {
       screen: RootComponent()(Bookmarks),
+      navigationOptions: {
+        header: () => null,
+      },
+    },
+    [ROUTES.SCREENS.FEEDBACK]: {
+      screen: RootComponent()(Feedback),
       navigationOptions: {
         header: () => null,
       },

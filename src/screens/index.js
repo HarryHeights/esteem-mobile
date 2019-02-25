@@ -1,6 +1,7 @@
 import { Bookmarks } from './bookmarks';
 import { Drafts } from './drafts';
 import { Editor } from './editor';
+import Feedback from './feedback';
 import { Follows } from './follows';
 import { Home } from './home';
 import { Launch } from './launch';
@@ -19,6 +20,7 @@ export {
   Bookmarks,
   Drafts,
   Editor,
+  Feedback,
   Follows,
   Home,
   Launch,
