@@ -159,6 +159,7 @@ class EditorContainer extends Component {
   _handleOpenImagePicker = () => {
     ImagePicker.openPicker({
       includeBase64: true,
+      mediaType: 'video',      
     })
       .then((image) => {
         this._handleMediaOnSelected(image);
@@ -170,7 +171,7 @@ class EditorContainer extends Component {
 
   _handleOpenCamera = () => {
     ImagePicker.openCamera({
-      includeBase64: true,
+      mediaType: 'video',
     })
       .then((image) => {
         this._handleMediaOnSelected(image);
