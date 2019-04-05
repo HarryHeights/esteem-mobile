@@ -117,7 +117,45 @@ class PostBody extends PureComponent {
     return this._hasParentTag(node.parent, name);
   };
 
+  _findDeep = (data, regex) => data.some((e) => {
+    console.log('regex :', regex, e);
+    if (e.data && regex.test(e.data)) return e.data;
+    if (e.children) return this._findDeep(e.children, regex);
+  });
+
+  _alterChildren = (dom, RNElements, isComment) => {
+    console.log('RNElements :', RNElements);
+    if (!isComment) {
+      const authorNameRegex = /(^|[^a-zA-Z0-9_!#$%&*@＠\/]|(^|[^a-zA-Z0-9_+~.-\/]))[@＠]([a-z][-\.a-z\d]+[a-z\d])/gi;
+      console.log('object :', this._findDeep(RNElements, authorNameRegex));
+    }
+    // if (node && node.children && node.children.length && node.children[0].data === '@oflyhigh' && node.data !== '@oflyhigh') {
+    //   node.children[0].name = 'a';
+    //   node.children[0].type = 'tag';
+    //   node.children[0].attribs = {
+    //     href: 'oflyhigh',
+    //     style: 'text-decoration: underline',
+    //   };
+    //   node.children[0].children = [
+    //     {
+    //       data: '@oflyhigh',
+    //       next: null,
+    //       prev: null,
+    //       type: 'text',
+    //     },
+    //   ];
+    // }
+  };
+
   _alterNode = (node, isComment) => {
+    // console.log('node.data : ', node.data);
+
+    // <a class="markdown-author-link" href="snoreball" data-author="snoreball"> @snoreball</a>
+
+    // if (node.data === '@oflyhigh') {
+    //   node.data = '<a class="markdown-author-link" href="oflyhigh" data-author="oflyhigh"> @oflyhigh</a>';
+    // }
+    // console.log('node.data : ', node.data);
     if (isComment) {
       if (node.name === 'img') {
         node.attribs.style = `max-width: ${WIDTH - 50}px; height: 100px; width: ${WIDTH
@@ -181,6 +219,7 @@ class PostBody extends PureComponent {
           baseFontStyle={styles.text}
           imagesMaxWidth={isComment ? WIDTH - 50 : WIDTH}
           alterNode={e => this._alterNode(e, isComment)}
+          onParsed={(dom, RNElements) => this._alterChildren(dom, RNElements, isComment)}
         />
       </Fragment>
     );
